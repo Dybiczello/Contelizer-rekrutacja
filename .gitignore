@@ -1,1 +1,4 @@
 venv/
+migrations/
+*.sqlite3
+__pycache__/
