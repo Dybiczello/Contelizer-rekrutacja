@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Your PESEL information</title>
+</head>
+<body>
+  <h1>Result</h1>
+  <p><a href="{% url 'checkpesel:upload_pesel' %}">Upload another PESEL number</a></p>
+
+  <h2>PESEL number:</h2>
+  <pre style="white-space: pre-wrap;">{{ pesel }}</pre>
+  <h2>Birth Date:</h2>
+  <pre style="white-space: pre-wrap;">{{ birth_date }}</pre>
+  <h2>Gender:</h2>
+  <pre style="white-space: pre-wrap;">{{ gender }}</pre>
+</body>
+</html>
